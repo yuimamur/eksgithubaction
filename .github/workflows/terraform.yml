@@ -35,7 +35,7 @@ jobs:
       - name: Terraform INIT
         run: terraform init
 
-      - name: Terraform Plan
+      - name: Terraform PLAN
         if: ${{ github.event.inputs.destroy != 'true' }}
         run: terraform plan
 
